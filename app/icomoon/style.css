@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?wl7mab') format('truetype'),
+    url('fonts/icomoon.woff?wl7mab') format('woff'),
+    url('fonts/icomoon.svg?wl7mab#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icm"], [class*=" icm"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icmtax:before {
+  content: "\e90e";
+}
+.icmtelegram:before {
+  content: "\e90f";
+}
+.icmtelephone:before {
+  content: "\e910";
+}
+.icmtwitter-logo-silhouette:before {
+  content: "\e911";
+}
+.icmvk:before {
+  content: "\e912";
+}
+.icmwhatsapp:before {
+  content: "\e913";
+}
+.icmaddress:before {
+  content: "\e914";
+}
+.icmanalysis:before {
+  content: "\e915";
+}
+.icmarrow-pointing-to-right:before {
+  content: "\e916";
+}
+.icmboxes:before {
+  content: "\e917";
+}
+.icmbrokerage:before {
+  content: "\e918";
+}
+.icmcalendar:before {
+  content: "\e919";
+}
+.icmcheck-mark:before {
+  content: "\e91a";
+}
+.icmclose-button:before {
+  content: "\e91b";
+}
+.icmcontract:before {
+  content: "\e91c";
+}
+.icmcredit-card:before {
+  content: "\e91d";
+}
+.icmdown-arrow:before {
+  content: "\e91e";
+}
+.icmdownload-arrow:before {
+  content: "\e91f";
+}
+.icmemail:before {
+  content: "\e920";
+}
+.icmenvelope:before {
+  content: "\e921";
+}
+.icmfacebook:before {
+  content: "\e922";
+}
+.icmfacebook-logo:before {
+  content: "\e923";
+}
+.icmfeedback:before {
+  content: "\e924";
+}
+.icmhome-stroyka:before {
+  content: "\e925";
+}
+.icmhouse:before {
+  content: "\e926";
+}
+.icmlaw:before {
+  content: "\e927";
+}
+.icmlinkedin:before {
+  content: "\e928";
+}
+.icmlinkedin-logo:before {
+  content: "\e929";
+}
+.icmodnoklassniki:before {
+  content: "\e92a";
+}
+.icmphone-call:before {
+  content: "\e92b";
+}
+.icmright-arrow:before {
+  content: "\e92c";
+}
+.icmArrow:before {
+  content: "\e900";
+}
+.icmbillboard:before {
+  content: "\e901";
+}
+.icmcreativity:before {
+  content: "\e902";
+}
+.icmfacebook-logo1:before {
+  content: "\e903";
+}
+.icmflyer:before {
+  content: "\e904";
+}
+.icminstagram:before {
+  content: "\e905";
+}
+.icmleft-arrow-min:before {
+  content: "\e906";
+}
+.icmMail:before {
+  content: "\e907";
+  color: #fff;
+}
+.icmPhone:before {
+  content: "\e908";
+  color: #fff;
+}
+.icmpictures:before {
+  content: "\e909";
+}
+.icmPlaceholder:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icmplotter:before {
+  content: "\e90b";
+}
+.icmsouvenir:before {
+  content: "\e90c";
+}
+.icmtelegram1:before {
+  content: "\e90d";
+}
