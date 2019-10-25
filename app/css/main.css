@@ -8582,7 +8582,7 @@ h1 {
 p {
   margin: 0;
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 1em;
   line-height: 160%; }
 
 a {
@@ -8590,6 +8590,9 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
+
+html {
+  overflow-x: hidden; }
 
 body {
   overflow-x: hidden;
@@ -8599,6 +8602,21 @@ body {
 
 .navbar {
   margin-bottom: 0px; }
+
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    background-color: #0d245f;
+    z-index: 10;
+    top: 0;
+    width: 100%; } }
+
+.header-hidden {
+  display: none; }
+  @media (max-width: 991px) {
+    .header-hidden {
+      height: 70px;
+      display: block; } }
 
 .header_wrapper {
   position: relative; }
@@ -8678,7 +8696,7 @@ body {
           height: 20px;
           margin-right: 5px; }
         .header_wrapper .header_top .header_contacts .lang p {
-          font-size: 16px;
+          font-size: 1em;
           margin-right: 15px; }
       .header_wrapper .header_top .header_contacts .phone {
         text-align: right; }
@@ -8839,7 +8857,7 @@ body {
         position: absolute;
         bottom: 0; }
     .about_us .about_us_desc p {
-      font-size: 16px;
+      font-size: 1em;
       font-family: "Myriad Pro";
       margin-top: 40px;
       margin-bottom: 80px; }
@@ -8903,7 +8921,7 @@ body {
       font-size: 56px; }
     .offers .offers_desc p {
       font-family: "Montserrat";
-      font-size: 16px;
+      font-size: 1em;
       padding-bottom: 40px;
       position: relative; }
   .offers .owl-next,
@@ -8924,7 +8942,7 @@ body {
     .offers .owl-next .flickity_text,
     .offers .owl-prev .flickity_text {
       font-family: "Oranienbaum";
-      font-size: 16px;
+      font-size: 1em;
       padding: 0 10px; }
     .offers .owl-next:hover,
     .offers .owl-prev:hover {
@@ -9116,7 +9134,7 @@ body {
           bottom: 0; }
       .publication_wrapper .publication_images .image .image_desc p {
         font-family: "Montserrat";
-        font-size: 16px;
+        font-size: 1em;
         -webkit-transition: all 0.3s ease-in;
         -o-transition: all 0.3s ease-in;
         transition: all 0.3s ease-in;
@@ -9498,12 +9516,12 @@ label {
   height: 100px;
   width: 100%;
   background-color: #f5f5f5;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (max-width: 991px) {
     .mob_menu_button_wrapper {
-      padding-left: 15px;
-      padding-right: 15px;
-      background-color: #0d245f; } }
+      background-color: #0d245f;
+      height: 70px; } }
   .mob_menu_button_wrapper:before {
     content: "";
     position: absolute;
@@ -9516,21 +9534,24 @@ label {
     -ms-transform: matrix(1, 0, -0.55, 1, 0, 0);
     transform: matrix(1, 0, -0.55, 1, 0, 0);
     background-color: #0d245f; }
+    @media (max-width: 1200px) {
+      .mob_menu_button_wrapper:before {
+        width: -webkit-calc(100vw - 200px);
+        width: calc(100vw - 200px); } }
   .mob_menu_button_wrapper .mob_logo {
-    height: 100%;
-    -webkit-background-size: auto auto;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 5vw center;
-    background-position: -webkit-calc( 50vw - 585px) center;
-    background-position: calc( 50vw - 585px) center;
-    position: relative;
-    z-index: 1; }
-    @media (max-width: 991px) {
-      .mob_menu_button_wrapper .mob_logo {
-        -webkit-background-size: contain;
-        background-size: contain;
-        background-position: center; } }
+    height: 100%; }
+    .mob_menu_button_wrapper .mob_logo img {
+      width: 272px; }
+    .mob_menu_button_wrapper .mob_logo .img {
+      height: 100%;
+      background-repeat: no-repeat;
+      width: 272px;
+      background-position: left;
+      -webkit-background-size: contain;
+      background-size: contain; }
+      @media (max-width: 991px) {
+        .mob_menu_button_wrapper .mob_logo .img {
+          width: 182px; } }
 
 .menu_button {
   height: 100%;
@@ -9575,17 +9596,13 @@ label {
     cursor: pointer;
     position: relative;
     padding: 0 10px; }
-    @media (min-width: 992px) {
-      .menu_button .menu_label {
-        right: 5vw;
-        right: -webkit-calc(50vw - 585px);
-        right: calc(50vw - 585px); } }
     .menu_button .menu_label span {
       width: 30px;
-      height: 3px;
+      height: 4px;
       color: black;
       background-color: #0d245f;
       margin-top: 2px;
+      margin-bottom: 2px;
       position: relative;
       overflow: hidden;
       overflow: hidden; }
@@ -9717,7 +9734,7 @@ label {
           color: #0d245f; }
           @media (max-width: 991px) {
             .contacts_map_wrapper .map_desc_wrapper .map_desc .desc_content h3 {
-              font-size: 16px; } }
+              font-size: 1em; } }
         .contacts_map_wrapper .map_desc_wrapper .map_desc .desc_content p {
           padding: 10px 0;
           font-family: "Myriad Pro";
@@ -9792,7 +9809,7 @@ label {
     padding-bottom: 10px;
     font-weight: normal; }
   .team_top span {
-    font-size: 16px;
+    font-size: 1em;
     font-family: "Montserrat";
     padding-bottom: 20px;
     position: relative; }
@@ -9812,7 +9829,7 @@ label {
     .team_main .partners_pages ul li {
       height: 50px;
       margin-bottom: 2px;
-      font-size: 16px;
+      font-size: 1em;
       font-weight: bold;
       color: black;
       background-color: #f5f5f5; }
@@ -9852,13 +9869,13 @@ label {
         background-size: contain; } }
   .team_main .personal_information .main_desc p {
     margin: 20px 0;
-    font-size: 16px;
+    font-size: 1em;
     font-family: "Montserrat"; }
     @media (max-width: 991px) {
       .team_main .personal_information .main_desc p {
         font-size: 14px; } }
   .team_main .personal_information .main_desc h3 {
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: 10px;
     margin-top: 40px; }
   .team_main .personal_information .main_desc ul {
@@ -9883,7 +9900,7 @@ label {
       color: white;
       background-color: #0d245f; }
     .team_main .nav a {
-      font-size: 16px;
+      font-size: 1em;
       font-weight: bold;
       color: black;
       background-color: #f5f5f5;
@@ -9901,7 +9918,7 @@ label {
   .team_main .tab-pane ul {
     margin: 20px 0; }
     .team_main .tab-pane ul li {
-      font-size: 16px;
+      font-size: 1em;
       font-family: "Montserrat";
       padding: 10px; }
       .team_main .tab-pane ul li:nth-child(even) {
@@ -10115,7 +10132,7 @@ h1 {
   .services_pages ul li {
     height: 50px;
     margin-bottom: 2px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     color: black;
     background-color: #f5f5f5; }
@@ -10203,19 +10220,41 @@ h1 {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  width: 100%;
-  height: 100%; }
+  width: 60%;
+  height: 100%;
+  font-size: 0.85em;
+  white-space: nowrap; }
   .header_info a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    vertical-align: middle;
+    margin-right: 10px; }
+    .header_info a * {
+      vertical-align: middle; }
   .header_info img {
-    height: 20px;
     margin-right: 5px; }
   .header_info p {
-    font-size: 16px;
     margin-right: 15px; }
+  @media (max-width: 991px) {
+    .header_info {
+      display: none; } }
+
+.header-top-content {
+  height: 100px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 991px) {
+    .header-top-content {
+      height: 70px; } }
 
 .publications_article_pages h2 {
   font-family: "Oranienbaum";
@@ -10228,7 +10267,7 @@ h1 {
   padding: 0; }
   .publications_article_pages ul li {
     border-bottom: 1px solid #f5f5f5;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
     color: black; }
     .publications_article_pages ul li a {
