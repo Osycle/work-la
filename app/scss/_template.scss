@@ -268,19 +268,18 @@ header{
 
 			p {
 				font-family: $font-family-1;
-				font-size: 18px;
-
+				font-size: 0.96em;
 				@media (min-width: 992px) {
 					margin-left: auto;
 					width: 70%;
-					padding-bottom: 40px;
+					padding-bottom: 20px;
 				}
 			}
 
 			h1 {
-				font-size: 12.5em;
+				font-size: 9.3em;
 				font-family: $font-family-2;
-				line-height: 60%;
+				line-height: 65%;
 				span {
 					font-size: 0.9em;
 					color: $color-1;
@@ -377,7 +376,7 @@ body {
 
 		p {
 			font-size: 1em;
-			font-family: "Myriad Pro";
+			font-family: "Montserrat";
 			margin-top: 40px;
 			margin-bottom: 80px;
 		}
@@ -826,7 +825,7 @@ body {
 
 				p {
 					padding: 10px 0;
-					font-family: "Myriad Pro";
+					font-family: "Montserrat";
 					font-size: 14px;
 				}
 			}
@@ -1409,7 +1408,7 @@ a{
 
 				p {
 					padding: 10px 0;
-					font-family: "Myriad Pro";
+					font-family: "Montserrat";
 					font-size: 14px;
 					@media (max-width: 991px) {
 						font-size:10px;
@@ -1429,6 +1428,9 @@ a{
 		li{
 			border-color: #4c4c4c !important;
 		}
+	}
+	@media (max-width: 991px) {
+		display: none;
 	}
 }
 .breadcrumb{
@@ -1783,14 +1785,19 @@ h1{
 	font-family: $font-family-2;
 	font-weight: 400;
 }
-
-.text-item{
-	p{
+ul:not([class]){
+	margin-top: 20px;
+	margin-bottom: 20px;
+	li{
+		text-align: left;
+		margin-top: 15px;
 		margin-bottom: 15px;
 	}
-	li{
-		margin-top: 5px;
-		margin-bottom: 5px;
+}
+.text-item{
+	p{
+		margin-bottom: 30px;
+		text-align: justify;
 	}
 }
 .entry-header{
@@ -1932,6 +1939,9 @@ h1{
 }
 .services_article_top{
 	margin-bottom: 40px;
+	@media (max-width: 991px){
+		margin-bottom: 20px;
+	}
 }
 .services_article_desc{
 	padding: 0 15px;
@@ -2084,4 +2094,27 @@ h1{
 		line-height: 150%;
 	}
 
+}
+
+
+
+
+
+
+
+//доп правки
+
+h2{
+	@media (max-width: 991px){
+		font-size: 2em !important;
+		padding-bottom: 15px !important;
+		&:before{
+			display: none;
+		}
+	}
+}
+.services_article_desc{
+	p{
+		text-align: justify;
+	}
 }
