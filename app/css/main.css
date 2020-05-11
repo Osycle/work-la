@@ -10793,6 +10793,88 @@ div.btn-def {
 .news-other-items p {
   font-size: 0.875em; }
 
+.infocenter-news-article .article-footer {
+  font-family: "Oranienbaum";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-width: 991px) {
+    .infocenter-news-article .article-footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 60px; }
+      .infocenter-news-article .article-footer .link-back {
+        display: none; } }
+
+.infocenter-news-article .soc {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .infocenter-news-article .soc .__text {
+    margin-right: 15px; }
+  .infocenter-news-article .soc ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0; }
+    .infocenter-news-article .soc ul .fa-twitter {
+      font-size: 20px; }
+    .infocenter-news-article .soc ul .fa-linkedin {
+      font-size: 20px; }
+    .infocenter-news-article .soc ul .fa-facebook {
+      font-size: 20px; }
+    .infocenter-news-article .soc ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      color: gray; }
+      .infocenter-news-article .soc ul li:hover {
+        color: #0d245f; }
+
+.infocenter-news-article .link-back {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .infocenter-news-article .link-back i {
+    margin-right: 10px; }
+    .infocenter-news-article .link-back i:before {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      display: inline-block; }
+
 /*
 		_helper.scss	
 */
